@@ -34,7 +34,6 @@ def main():
     kuka_id = p.loadURDF(urdf_fn, base_pos, base_ori, flags=p.URDF_USE_SELF_COLLISION)
 
     for _ in range(10000):
-
         p.saveBullet('snap', CLIENT)
 
         # position, quaternion = p.getBasePositionAndOrientation(kuka_id)
@@ -44,6 +43,6 @@ def main():
 
     p.disconnect()
 
-
 if __name__ == '__main__':
     main()
+    
